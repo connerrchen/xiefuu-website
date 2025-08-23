@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wide Leg Trousers - XIEFUU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li class="dropdown">
+                    <a href="#collections">Collections</a>
+                    <div class="dropdown-content">
+                        <a href="ss2025-blue.html">Ss2025 Blue</a>
+                        <a href="ss2025-indigo.html">Ss2025 Indigo</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#journal">Journal</a>
+                    <div class="dropdown-content">
+                        <a href="#story">Story</a>
+                        <a href="#innovation">Innovation</a>
+                        <a href="#design">Design</a>
+                    </div>
+                </li>
+                                        <li class="dropdown">
+                            <a href="#team">Team</a>
+                            <div class="dropdown-content">
+                                <a href="about.html">About Us</a>
+                                <a href="bios.html">Bio</a>
+                            </div>
+                        </li>
+            </ul>
+            <a href="index.html" class="logo">XIEFUU</a>
+            <ul class="nav-right">
+                <li><a href="#search" class="nav-icon" title="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </a></li>
+                <li><a href="#help" class="nav-icon" title="Help">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        <point cx="12" cy="17" r="1"></point>
+                    </svg>
+                </a></li>
+                <li><a href="#account" class="nav-icon" title="Account">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a></li>
+                <li><a href="#cart" class="nav-icon" title="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="Items/1.PNG" alt="Wide Leg Trousers Front" id="main-product-image">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="Items/1.PNG" alt="Wide Leg Trousers Front" class="thumbnail active" onclick="changeImage('Items/1.PNG')">
+                    <img src="Items/2.PNG" alt="Wide Leg Trousers Back" class="thumbnail" onclick="changeImage('Items/2.PNG')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Wide Leg Trousers</h1>
+                <p class="price">$119</p>
+                <p class="description">Premium wide leg trousers with a modern, relaxed fit. Perfect for both casual and elevated looks.</p>
+                
+                <div class="size-selection">
+                    <h3>Select Size</h3>
+                    <div class="size-options">
+                        <button class="size-option">S</button>
+                        <button class="size-option">M</button>
+                        <button class="size-option">L</button>
+                        <button class="size-option">XL</button>
+                    </div>
+                </div>
+                
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                
+                <div class="product-details">
+                    <h3>Product Details</h3>
+                    <ul>
+                        <li>Premium cotton blend fabric</li>
+                        <li>Relaxed wide leg silhouette</li>
+                        <li>Elastic waistband with drawstring</li>
+                        <li>Side pockets</li>
+                        <li>Machine washable</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>XIEFUU</h4>
+                <p>Restyling the past, one piece at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>Instagram: <a href="https://instagram.com/xiefuu">@xiefuu</a></p>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Stay updated with our latest collections.</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 XIEFUU. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeImage(src) {
+            document.getElementById('main-product-image').src = src;
+            
+            // Update active thumbnail
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html> 
